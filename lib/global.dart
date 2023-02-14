@@ -40,6 +40,8 @@ class Global {
       'detail': 'Lots of cheese',
       'price': 400,
       'i': 0,
+      'total': 0,
+      'isActive': false,
     },
     {
       'item': 'Margherita Cheese Burst Pizza',
@@ -48,6 +50,8 @@ class Global {
       'detail': ' Lots of cheese',
       'price': 350,
       'i': 0,
+      'total': 0,
+      'isActive': false,
     },
     {
       'item': 'Thin Crust Pizza',
@@ -56,6 +60,8 @@ class Global {
       'detail': 'cheese , onion , garlic , mashroom',
       'price': 450,
       'i': 0,
+      'total': 0,
+      'isActive': false,
     },
     {
       'item': 'Vegetarian Pizza',
@@ -64,6 +70,8 @@ class Global {
       'detail': 'cheese , onoin , garlic , capcicum ,tomato',
       'price': 400,
       'i': 0,
+      'total': 0,
+      'isActive': false,
     },
     {
       'item': 'Mexican Delight Pizza',
@@ -72,6 +80,8 @@ class Global {
       'detail': 'cheese , chilly , tomato , sweet corn , olive',
       'price': 500,
       'i': 0,
+      'total': 0,
+      'isActive': false,
     },
     {
       'item': 'Spicy Treat Pizza',
@@ -80,6 +90,8 @@ class Global {
       'detail': 'cheese , green pepper , spicy paneer , olives , jalapino ',
       'price': 360,
       'i': 0,
+      'total': 0,
+      'isActive': false,
     }
   ];
   static List<Map<String, dynamic>> salad = [
@@ -91,6 +103,8 @@ class Global {
       'detail': 'Cucumber , onion',
       'price': 100,
       'i': 0,
+      'total': 0,
+      'isActive': false,
     },
     {
       'item': 'Greek Salad',
@@ -100,6 +114,8 @@ class Global {
           ' cucumbers, tomatoes, green bell pepper, red onion, olives, and feta cheese',
       'price': 200,
       'i': 0,
+      'total': 0,
+      'isActive': false,
     },
     {
       'item': 'Vegetable Salad',
@@ -108,6 +124,8 @@ class Global {
       'detail': ' cucumbers, tomatoes, carrots , onion',
       'price': 150,
       'i': 0,
+      'total': 0,
+      'isActive': false,
     },
     {
       'item': 'Chef Salad',
@@ -116,6 +134,8 @@ class Global {
       'detail': ' Potato , red chilli, garlic , letus ',
       'price': 120,
       'i': 0,
+      'total': 0,
+      'isActive': false,
     },
   ];
   static List<Map<String, dynamic>> pasta = [
@@ -127,26 +147,49 @@ class Global {
       'detail': ' cheese , onion ,garlic ,ginger',
       'price': 180,
       'i': 0,
+      'total': 0,
+      'isActive': false,
     },
     {
       'item': 'Pasta with Walnuts sauce',
       'image':
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSbW0re8t_r4cucFppj7_H4JkWJBiSC3EHiA&usqp=CAU'
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSbW0re8t_r4cucFppj7_H4JkWJBiSC3EHiA&usqp=CAU',
+      'detail': 'olive oil, parmesan, garlic, walnuts',
+      'price': 200,
+      'i': 0,
+      'total': 0,
+      'isActive': false,
     },
     {
       'item': 'Spaghetti with Garlic',
       'image':
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_2ekhv0RngL0g4bCsWAAIKHPYXB-eqfaTXw&usqp=CAU'
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrepyk1jyNeNN8xubqv7d6ysVJlbqhEXqwYQ&usqp=CAU',
+      'detail':
+          'cloves garlic, sliced red chili flakes,fresh parsley, finely chopped,',
+      'price': 150,
+      'i': 0,
+      'total': 0,
+      'isActive': false,
     },
     {
       'item': 'Red Sauce Pasta',
       'image':
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj5qn3AmuGqtDNoZ2Fd9uP5BOr4cngE-vA9g&usqp=CAU'
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj5qn3AmuGqtDNoZ2Fd9uP5BOr4cngE-vA9g&usqp=CAU',
+      'detail': 'tomato , garlic , onion , basil leaves ,bay leaf ',
+      'price': 250,
+      'i': 0,
+      'total': 0,
+      'isActive': false,
     },
     {
       'item': 'White Sauce Pasta',
       'image':
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiIrBVid3KJUges05LLTdzpKavJn_kQapRjA&usqp=CAU'
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiIrBVid3KJUges05LLTdzpKavJn_kQapRjA&usqp=CAU',
+      'detail': 'milk , chilli flaks , capsicum ,pepper, ',
+      'price': 220,
+      'i': 0,
+      'total': 0,
+      'isActive': false,
     }
   ];
   static List<Map<String, dynamic>> beverages = [
@@ -154,27 +197,52 @@ class Global {
       'title': 'Beverages',
       'item': 'Classic Mojito',
       'image':
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9PElian0xZY4cijWKetoTdyDb5g8up1ICSQ&usqp=CAU'
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9PElian0xZY4cijWKetoTdyDb5g8up1ICSQ&usqp=CAU',
+      'detail': 'Rum infused withfresh lime,mintand sugar',
+      'price': 100,
+      'i': 0,
+      'total': 0,
+      'isActive': false,
     },
     {
       'item': 'RaspBerry Mojito',
       'image':
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqPHHJjBt_rCVwGk6Oc-KvwKInAiGmVAQcfw&usqp=CAU'
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqPHHJjBt_rCVwGk6Oc-KvwKInAiGmVAQcfw&usqp=CAU',
+      'detail': 'Rum stirred with raspberry,fresh mint lime and sugar',
+      'price': 120,
+      'i': 0,
+      'total': 0,
+      'isActive': false,
     },
     {
       'item': 'Premium Margarita',
       'image':
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa09o-SYjOvN8a1YB_Qnj7g9gpeDvIijPMoQ1kSYoeWEMnL-48LDFpM0k5gb0DICS1Nfw&usqp=CAU'
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa09o-SYjOvN8a1YB_Qnj7g9gpeDvIijPMoQ1kSYoeWEMnL-48LDFpM0k5gb0DICS1Nfw&usqp=CAU',
+      'detail': 'tequila ,lime juice ,rum with pinch of salt',
+      'price': 150,
+      'i': 0,
+      'total': 0,
+      'isActive': false,
     },
     {
       'item': 'Blue Island Ice Rum',
       'image':
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM-51e1VwSIW3f-GKU70ldveNPx0ImLiY1mg&usqp=CAU'
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM-51e1VwSIW3f-GKU70ldveNPx0ImLiY1mg&usqp=CAU',
+      'detail': 'vodka ,fruit tequila topped with cokeand premium rum',
+      'price': 220,
+      'i': 0,
+      'total': 0,
+      'isActive': false,
     },
     {
       'item': 'Passion Fruit Mojito',
       'image':
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLVythUFkEt2XYivK5j5Z4sRpbyjeMmXkilg&usqp=CAU'
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLVythUFkEt2XYivK5j5Z4sRpbyjeMmXkilg&usqp=CAU',
+      'detail': 'rum ,passion fruit ,a splash of lime juice , mint and sugar',
+      'price': 220,
+      'i': 0,
+      'total': 0,
+      'isActive': false,
     },
   ];
   static List<Map<String, dynamic>> dessert = [
@@ -182,32 +250,64 @@ class Global {
       'title': 'Desserts',
       'item': 'Chocolate Molten Lava Cake',
       'image':
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKVv-0jVHR3PEM8lChY7SHNBAjwRbGKmmMBg&usqp=CAU'
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKVv-0jVHR3PEM8lChY7SHNBAjwRbGKmmMBg&usqp=CAU',
+      'detail': 'dark chocolate , butter ,sugar',
+      'price': 200,
+      'i': 0,
+      'total': 0,
+      'isActive': false,
     },
     {
       'item': 'Special Muffins',
       'image':
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9wLV8AhH9gmPUiZZN-2NPmVtaAGIkG_WfNw&usqp=CAU'
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9wLV8AhH9gmPUiZZN-2NPmVtaAGIkG_WfNw&usqp=CAU',
+      'detail': 'milk , sugar flour , chocolate ',
+      'price': 100,
+      'i': 0,
+      'total': 0,
+      'isActive': false,
     },
     {
       'item': 'Chocolate Pan Cake',
       'image':
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2F7JDzBhKRkcJYdNR6ZxA8E3xskqzUmDoFg&usqp=CAU'
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2F7JDzBhKRkcJYdNR6ZxA8E3xskqzUmDoFg&usqp=CAU',
+      'detail': ' milk , vanilla , butter , choco powder,sugar',
+      'price': 150,
+      'i': 0,
+      'total': 0,
+      'isActive': false,
     },
     {
       'item': 'Brownie',
       'image':
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNHAgXahjLqLab6QSW35nbwHdfvHalT59Qtg&usqp=CAU'
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNHAgXahjLqLab6QSW35nbwHdfvHalT59Qtg&usqp=CAU',
+      'detail': 'cake , ice cream',
+      'price': 180,
+      'i': 0,
+      'total': 0,
+      'isActive': false,
     },
     {
       'item': 'Ice Cream',
       'image':
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA9HJaZJ3BKLUsSnHcBjyR-y_5kXHBWOt7qA&usqp=CAU'
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA9HJaZJ3BKLUsSnHcBjyR-y_5kXHBWOt7qA&usqp=CAU',
+      'detail': ' vanilla , mango , chocolate',
+      'price': 80,
+      'i': 0,
+      'total': 0,
+      'isActive': false,
     },
     {
       'item': 'Hot Chocolate',
       'image':
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt7fZiVu0rFBDNZW5IsGBDbHIqZHvSHRbZcg&usqp=CAU'
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt7fZiVu0rFBDNZW5IsGBDbHIqZHvSHRbZcg&usqp=CAU',
+      'detail': ' milk , coco powder',
+      'price': 150,
+      'i': 0,
+      'total': 0,
+      'isActive': false,
     },
   ];
+  static List cart = [];
+  static List favorite = [];
 }

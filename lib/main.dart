@@ -1,4 +1,6 @@
+import 'package:exam/cart.dart';
 import 'package:exam/detail.dart';
+import 'package:exam/favorite.dart';
 import 'package:exam/menu.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +12,9 @@ void main() {
     routes: {
       '/': (context) => const MyApp(),
       'menu': (context) => const Menu(),
-      'detail': (context) => const Detail()
+      'detail': (context) => const Detail(),
+      'cart': (context) => const Cart(),
+      'favorite': (context) => const Favorite()
     },
   ));
 }

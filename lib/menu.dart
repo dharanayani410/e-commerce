@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'global.dart';
+
 class Menu extends StatefulWidget {
   const Menu({Key? key}) : super(key: key);
 
@@ -57,11 +59,34 @@ class _MenuState extends State<Menu> {
                               Navigator.pushNamed(context, 'detail',
                                   arguments: e);
                             },
+                            trailing: IconButton(
+                              icon: (e['isActive'] == false)
+                                  ? Icon(Icons.favorite_border)
+                                  : Icon(
+                                      Icons.favorite,
+                                      color: Colors.red,
+                                    ),
+                              onPressed: () {
+                                setState(() {
+                                  e['isActive'] = !e['isActive'];
+                                  Global.favorite.add(e);
+                                });
+                              },
+                            ),
                           ),
                         ))
                     .toList(),
               ))
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(
+          Icons.favorite,
+          color: Colors.red,
+        ),
+        onPressed: () {
+          Navigator.pushNamed(context, 'favorite');
+        },
       ),
       backgroundColor: Colors.cyan.shade300,
     ));
