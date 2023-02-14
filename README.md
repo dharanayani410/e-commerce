@@ -1,16 +1,6 @@
 # exam
 
-A new Flutter project.
+E-Commerce Application
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Screen shots
+<img src = "https://user-images.githubusercontent.com/121785209/218710452-619e14e1-d85a-4f29-aeb8-62c563d8e78a.png" height = 500px/> 
